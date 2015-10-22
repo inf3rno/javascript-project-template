@@ -1,0 +1,54 @@
+{
+  "name": "math-template",
+  "version": "0.1.0",
+  "description": "Project template for karma + browserify + jasmine + gulp.",
+  "keywords": [
+    "test"
+  ],
+  "license": "MIT",
+  "author": "László Lajos Jánszky",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node ./node_modules/karma/bin/karma start",
+    "release": "npm run build && npm run test && npm publish",
+    "build": "node ./node_modules/gulp/bin/gulp build",
+    "build-for-manual-testing": "node ./node_modules/gulp/bin/gulp build-for-manual-testing",
+    "test": "npm run test-node & npm run test-browser",
+    "test-browser": "node ./node_modules/karma/bin/karma start --single-run",
+    "test-node": "node ./node_modules/jasmine/bin/jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/inf3rno/javascript-project-template"
+  },
+  "bugs": {
+    "url": "https://github.com/inf3rno/javascript-project-template/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "browserify": "^11.2.0",
+    "del": "^2.0.2",
+    "glob": "^5.0.15",
+    "globby": "^3.0.1",
+    "gulp": "^3.9.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace-task": "^0.11.0",
+    "gulp-task-file-loader": "^1.0.0",
+    "gulp-uglify": "^1.4.2",
+    "gutil": "^1.6.4",
+    "jasmine": "^2.3.2",
+    "jasmine-core": "^2.3.4",
+    "karma": "^0.13.11",
+    "karma-browserify": "^4.4.0",
+    "karma-chrome-launcher": "^0.2.1",
+    "karma-firefox-launcher": "^0.1.6",
+    "karma-ie-launcher": "^0.2.0",
+    "karma-jasmine": "^0.3.6",
+    "karma-opera-launcher": "^0.3.0",
+    "karma-phantomjs-launcher": "^0.2.1",
+    "phantomjs": "^1.9.18",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "yargs": "^3.27.0"
+  }
+}
