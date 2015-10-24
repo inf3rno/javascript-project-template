@@ -62,14 +62,6 @@
  - Feature: Add a package.json.
  - Feature: Write example source code and jasmine tests.
 
-### TODO list
-
- - Bug: Karma preprocessors does not work with ``"**/*.js": ["browserify"]`. I [reported it](https://github.com/karma-runner/karma/issues/1650) as a bug.
- - Feature: Add support for jasmine helpers and maybe for a different jasmine.json file.
- - Feature: We could add a project generator, but I think that should be a more general project with many different libs.
- - Feature: Add babel and ES6 support.
- - Feature: Add some real browser code e.g. a calculator with angular.
-
 ## License
 
 MIT - 2015 László Lajos Jánszky
