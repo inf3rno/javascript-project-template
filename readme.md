@@ -52,6 +52,8 @@
 
 ## release logs
 
+ - Feature: Add source maps.
+
 2015-10-22, v0.1.0
 
  - Feature: Add travis file.
