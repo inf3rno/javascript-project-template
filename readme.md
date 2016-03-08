@@ -39,7 +39,7 @@
 #### travis
 
  - Node.js 5.x is set.
- - Travis will run `npm install` and `npm test`.
+ - Travis will run `npm install` and `npm run test-node && npm run tdd-karma`. I excluded the `bdd-karma` tests because they are obviously failing without the yadda modifications.
 
 #### gulp
 
