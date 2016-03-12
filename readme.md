@@ -12,10 +12,6 @@
  - Install node modules with `npm install`.
  - Enable git.
  
-### yadda modifications
-
- - The current version of yadda (0.17.1) is not compatible with karma! You need to modify the library this way: https://github.com/acuminous/yadda/issues/58#issuecomment-193975789 .
-
 ## Usage
 
 ### npm scripts
@@ -39,7 +35,7 @@
 #### travis
 
  - Node.js 5.x is set.
- - Travis will run `npm install` and `npm run test-node && npm run tdd-karma`. I excluded the `bdd-karma` tests because they are obviously failing without the yadda modifications.
+ - Screen added to run firefox karma tests.
 
 #### gulp
 
@@ -54,7 +50,7 @@
 #### yadda
 
  - Currently I am using a workaround in the `yadda.conf.js` to support an IntelliJ plugin. Details here: https://github.com/acuminous/yadda/issues/196 . Maybe the author writes the cucumber.js IntelliJ plugin for Yadda as well and we don't have to use the cucumber.js directory structure and step definition style. I sent an email to the author about this, but he did not respond yet.
- - Currently I am using a workaround in the `yadda` library to support the nodejs `fs` lib more or less by karma. Details here: https://github.com/acuminous/yadda/issues/58#issuecomment-193975789 . Maybe Yadda developers implement this feature in the future, so we don't have to patch the lib after installing it with npm.
+ - Currently I am using my yadda fork, which supports karma. Sooner or later this will be pulled into the karma project.
 
 #### mocha
 
@@ -66,6 +62,8 @@
  - There is nothing surprising in the karma config files, it is the default config from examples.
 
 ## release logs
+
+ - Feature: Updated dependencies, using a custom yadda fork for now.
 
 2016-03-08, v0.2.0
 
