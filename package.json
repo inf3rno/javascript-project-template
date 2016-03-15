@@ -23,12 +23,12 @@
     "build": "npm run test && gulp build",
     "test": "npm run test-node && npm run test-karma",
     "test-node": "npm run bdd-node && npm run tdd-node",
-    "test-karma": "npm run bdd-karma && npm run bdd-karma",
+    "test-karma": "npm run bdd-karma && npm run tdd-karma",
     "bdd": "npm run bdd-node && npm run bdd-karma",
     "tdd": "npm run tdd-node && npm run tdd-karma",
     "bdd-node": "mocha --reporter spec yadda.node.js",
     "bdd-karma": "karma start bdd.karma.conf.js --single-run",
-    "tdd-node": "mocha test/**/*spec.js",
+    "tdd-node": "mocha --reporter spec test/**/*.spec.js",
     "tdd-karma": "karma start tdd.karma.conf.js --single-run"
   },
   "repository": {
