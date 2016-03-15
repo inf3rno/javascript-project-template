@@ -35,7 +35,7 @@ module.exports = function (config) {
         colors: true,
         logLevel: config.LOG_INFO,
         autoWatch: true,
-        captureTimeout: 6000,
+        captureTimeout: 60000,
         singleRun: false
     });
 };

@@ -9,7 +9,7 @@ module.exports = function (config) {
         ],
         frameworks: ["browserify", "mocha"],
         files: [
-            "yadda.conf.js",
+            "yadda.karma.js",
             "index.js",
             "src/**/*",
             "test/helpers/**/*",
@@ -17,7 +17,7 @@ module.exports = function (config) {
             {pattern: "test/features/**/*.feature", included: false}
         ],
         preprocessors: {
-            "yadda.conf.js": ["browserify"],
+            "yadda.karma.js": ["browserify"],
             "index.js": ["browserify"],
             "src/**/*": ["browserify"],
             "test/helpers/**/*": ["browserify"],
@@ -38,7 +38,7 @@ module.exports = function (config) {
         colors: true,
         logLevel: config.LOG_INFO,
         autoWatch: true,
-        captureTimeout: 6000,
+        captureTimeout: 60000,
         singleRun: false
     });
 };

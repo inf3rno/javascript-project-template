@@ -49,8 +49,9 @@
 
 #### yadda
 
- - Currently I am using a workaround in the `yadda.conf.js` to support an IntelliJ plugin. Details here: https://github.com/acuminous/yadda/issues/196 . Maybe the author writes the cucumber.js IntelliJ plugin for Yadda as well and we don't have to use the cucumber.js directory structure and step definition style. I sent an email to the author about this, but he did not respond yet.
- - Currently I am using my yadda fork, which supports karma. Sooner or later this will be pulled into the karma project.
+ - I use a workaround in the `yadda.[karma|node].js` to support an IntelliJ plugin. Details here: https://github.com/acuminous/yadda/issues/196 . Maybe the author writes the cucumber.js IntelliJ plugin for Yadda as well and we don't have to use the cucumber.js directory structure and step definition style. I sent an email to the author about this, but he did not respond yet.
+ - I use my yadda fork, which supports karma. Sooner or later this will be pulled into the karma project.
+ - I use different `yadda.[karma|node].js` files for karma and node, because the gui tests should not be loaded by node.
 
 #### mocha
 
@@ -63,7 +64,8 @@
 
 ## release logs
 
- - Feature: Updated dependencies, using a custom yadda fork for now.
+ - Feature: Add basic DOM tests.
+ - Feature: Update dependencies, using a custom yadda fork for now.
 
 2016-03-08, v0.2.0
 
