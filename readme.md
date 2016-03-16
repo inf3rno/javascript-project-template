@@ -64,6 +64,8 @@
 
 ## release logs
 
+2016-03-16, v0.2.1
+
  - Feature: Add test file filtering based on file ending.
  - Feature: Add basic DOM tests.
  - Feature: Update dependencies, using a custom yadda fork for now.
