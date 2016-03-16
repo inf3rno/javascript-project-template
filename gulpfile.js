@@ -1,5 +1,7 @@
-var argv = require("yargs").argv;
-var group = argv._[0];
+var program = require("commander");
+program.parse(process.argv);
+
+var group = program.args[0];
 
 var groups = {
     "build": ["tasks/*.js", {

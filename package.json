@@ -41,6 +41,7 @@
   "dependencies": {},
   "devDependencies": {
     "browserify": "^13.0.0",
+    "commander": "^2.9.0",
     "del": "*",
     "expect.js": "*",
     "globby": "^4.0.0",
@@ -58,7 +59,6 @@
     "vinyl-buffer": "*",
     "vinyl-source-stream": "*",
     "watchify": "^3.7.0",
-    "yadda": "git://github.com/inf3rno/yadda.git",
-    "yargs": "^4.2.0"
+    "yadda": "git://github.com/inf3rno/yadda.git"
   }
 }
