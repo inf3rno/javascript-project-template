@@ -7,7 +7,7 @@ var path = require("path");
 
 new Yadda.FeatureFileSearch("./test/features").each(function (file) {
 
-    if (path.basename(file, ".feature") == "gui")
+    if (path.basename(file, ".karma.feature") != path.basename(file))
         return;
 
     featureFile(file, function (feature) {

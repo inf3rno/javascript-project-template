@@ -13,7 +13,8 @@ module.exports = function (config) {
             "test/**/*"
         ],
         exclude: [
-            "test/features/**/*"
+            "test/features/**/*",
+            "test/**/*.node.spec.js"
         ],
         preprocessors: {
             "index.js": ["browserify"],

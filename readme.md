@@ -25,10 +25,10 @@
  - `npm run test-karma` - Runs the BDD and TDD karma tests.
  - `npm run bdd` - Runs the BDD node and karma tests.
  - `npm run tdd` - Runs the TDD node and karma tests.
- - `npm run bdd-node` - Runs the BDD node tests, so mocha with the yadda plugin on the `test/features/*.feature` files.
- - `npm run bdd-karma` - Runs the BDD karma tests, so mocha with the yadda plugin browserified.
- - `npm run tdd-node` - Runs the TDD node tests, so mocha on the `test/*.spec.js` files.
- - `npm run tdd-karma` - Runs the TDD karma tests, so mocha browserified.
+ - `npm run bdd-node` - Runs the BDD node tests, so mocha with the yadda plugin on the `test/features/*.feature` files, but not on the `*.karma.feature*` files.
+ - `npm run bdd-karma` - Runs the BDD karma tests, so mocha with the yadda plugin on the `test/features/*.feature` files browserified, but not on the `*.node.feature` files.
+ - `npm run tdd-node` - Runs the TDD node tests, so mocha on the `test/*.spec.js` files, but not on the `*.karma.spec.js` files.
+ - `npm run tdd-karma` - Runs the TDD karma tests, so mocha on the `test/*.spec.js` files browserified, but not on the `*.node.spec.js` files.
     
 ### libs
 
@@ -64,6 +64,7 @@
 
 ## release logs
 
+ - Feature: Add test file filtering based on file ending.
  - Feature: Add basic DOM tests.
  - Feature: Update dependencies, using a custom yadda fork for now.
 
