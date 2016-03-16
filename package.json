@@ -28,7 +28,7 @@
     "tdd": "npm run tdd-node && npm run tdd-karma",
     "bdd-node": "mocha --reporter spec yadda.node.js",
     "bdd-karma": "karma start bdd.karma.conf.js --single-run",
-    "tdd-node": "mocha --reporter spec test/**/*.spec.js",
+    "tdd-node": "mocha --reporter spec",
     "tdd-karma": "karma start tdd.karma.conf.js --single-run"
   },
   "repository": {
